@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6913882F1D00F98B001F5C3F /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6913882E1D00F98B001F5C3F /* AddPostVC.swift */; };
+		691388321D022FC6001F5C3F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691388311D022FC6001F5C3F /* DataService.swift */; };
 		6918F42A1CF67CAB00808D8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918F4291CF67CAB00808D8C /* AppDelegate.swift */; };
 		6918F42C1CF67CAB00808D8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918F42B1CF67CAB00808D8C /* ViewController.swift */; };
 		6918F42F1CF67CAB00808D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6918F42D1CF67CAB00808D8C /* Main.storyboard */; };
 		6918F4311CF67CAB00808D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6918F4301CF67CAB00808D8C /* Assets.xcassets */; };
 		6918F4341CF67CAB00808D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6918F4321CF67CAB00808D8C /* LaunchScreen.storyboard */; };
+		6918F43D1CF67DB800808D8C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918F43C1CF67DB800808D8C /* Post.swift */; };
+		6918F4401CFCB27200808D8C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918F43F1CFCB27200808D8C /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6913882E1D00F98B001F5C3F /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		691388311D022FC6001F5C3F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		6918F4261CF67CAB00808D8C /* my-hood-devslopes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-hood-devslopes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6918F4291CF67CAB00808D8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6918F42B1CF67CAB00808D8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		6918F4301CF67CAB00808D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6918F4331CF67CAB00808D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6918F4351CF67CAB00808D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6918F43C1CF67DB800808D8C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		6918F43F1CFCB27200808D8C /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		691388301D022FA2001F5C3F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				691388311D022FC6001F5C3F /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		6918F41D1CF67CAB00808D8C = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +70,42 @@
 		6918F4281CF67CAB00808D8C /* my-hood-devslopes */ = {
 			isa = PBXGroup;
 			children = (
-				6918F4291CF67CAB00808D8C /* AppDelegate.swift */,
-				6918F42B1CF67CAB00808D8C /* ViewController.swift */,
-				6918F42D1CF67CAB00808D8C /* Main.storyboard */,
+				691388301D022FA2001F5C3F /* Services */,
+				6918F43B1CF67D8A00808D8C /* Model */,
+				6918F43E1CFCB0FC00808D8C /* View */,
+				69D2C6B51CFF9A8C002592AA /* Controller */,
 				6918F4301CF67CAB00808D8C /* Assets.xcassets */,
-				6918F4321CF67CAB00808D8C /* LaunchScreen.storyboard */,
+				6918F4291CF67CAB00808D8C /* AppDelegate.swift */,
 				6918F4351CF67CAB00808D8C /* Info.plist */,
 			);
 			path = "my-hood-devslopes";
+			sourceTree = "<group>";
+		};
+		6918F43B1CF67D8A00808D8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6918F43C1CF67DB800808D8C /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6918F43E1CFCB0FC00808D8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6918F43F1CFCB27200808D8C /* PostCell.swift */,
+				6918F4321CF67CAB00808D8C /* LaunchScreen.storyboard */,
+				6918F42D1CF67CAB00808D8C /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		69D2C6B51CFF9A8C002592AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6918F42B1CF67CAB00808D8C /* ViewController.swift */,
+				6913882E1D00F98B001F5C3F /* AddPostVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6918F43D1CF67DB800808D8C /* Post.swift in Sources */,
 				6918F42C1CF67CAB00808D8C /* ViewController.swift in Sources */,
+				6913882F1D00F98B001F5C3F /* AddPostVC.swift in Sources */,
+				691388321D022FC6001F5C3F /* DataService.swift in Sources */,
 				6918F42A1CF67CAB00808D8C /* AppDelegate.swift in Sources */,
+				6918F4401CFCB27200808D8C /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +335,7 @@
 				6918F43A1CF67CAB00808D8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
